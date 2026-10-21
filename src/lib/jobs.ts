@@ -53,6 +53,7 @@ export function formatPostedDate(iso: string): string {
     });
 }
 
+/** Return unique strings in locale-aware alphabetical order. */
 function getSortedUniqueValues(values: string[]): string[] {
     return [...new Set(values)].sort((a, b) => a.localeCompare(b));
 }

@@ -101,6 +101,7 @@ const locations = getLocations(jobs);
   const filterResults = document.querySelector<HTMLElement>('[data-testid="filter-results"]');
   const filterEmptyState = document.querySelector<HTMLElement>('[data-testid="filter-empty-state"]');
 
+  /** Update rendered role cards and feedback for the current filter selections. */
   function updateRoleVisibility(): void {
     if (
       !departmentFilter ||
